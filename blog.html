@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="shortcut icon" href="blog.png">
+    <script src="https://kit.fontawesome.com/7ec6f6ecf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="home">
+        <nav>
+            <h1><a href="#home">Portfo<span>lio.</span></a></h1>
+            <div class="menutoggle" onclick="togglemenu();"></div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Sevices</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contain">
+            <h2>Hello, My name is</h2>
+            <h1>Mohammad Abdullah</h1>
+            <h3>And I'm a <span>Developer</span></h3>
+            <a href="#">Hire me</a>
+        </div>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </div>
+    </div>
+    <div class="container1" id="about">
+        <div class="title">
+            <h1>About me</h1>
+            <span></span><p>who I am</p><span></span>
+        </div>
+        <div class="content">
+            <div class="pic">
+                <img src="blueshirt.jpg" alt="">
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium adipisci voluptates natus, sint qui dolorem officia rerum perferendis placeat totam fugiat ducimus eos odio cupiditate sit? Veritatis, id assumenda.</p>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="container2" id="services">
+        <div class="title">
+            <h1>My Services</h1>
+            <span></span><p>what I can do</p><span></span>
+        </div>
+        <div class="content">
+            <div class="div1">
+                <div class="ti">
+                    <img src="html.jpg" alt="">
+                    <h1>Web Development</h1>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="ti">
+                    <img src="web.jpg" alt="">
+                    <h1>Web Designing</h1>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="ti">
+                    <img src="seo.jpg" alt="">
+                    <h1>Graphic Designing</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3" id="skills">
+        <div class="title">
+            <h1>My Skills</h1>
+            <span></span><p>qualities</p><span></span>
+        </div>
+        <div class="content">
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni dolorem sequi modi corrupti quos ducimus fugiat inventore dolorum. Accusamus, quas. Mollitia illo porro dolor dolorum! Minima, eum perferendis?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="bars">
+                <li><span class="per">90%</span>
+                    <h3>Html5</h3><span class="bar"><span class="html"></span></span>
+                </li>
+                <li><span class="per">80%</span>
+                    <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
+                </li>
+                <li><span class="per">20%</span>
+                    <h3>PHP</h3><span class="bar"><span class="jquery"></span></span>
+                </li>
+                <li><span class="per">40%</span>
+                    <h3>JavaScript</h3><span class="bar"><span class="js"></span></span>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="container4" id="contact">
+        <div class="title">
+            <h1>Contact Me</h1>
+            <span></span><p>connect with me</p><span></span>
+        </div>
+        <div class="block1">
+            <input type="text" placeholder="Enter Your Name"><br>
+            <input type="text" placeholder="Input Your E-mail"><br>
+            <input type="text" placeholder="Type Your Message"><br>
+            <button>SUBMIT</button>
+        </div>
+        </div>
+    </div>
+    <div class="container5">
+        <p>A website by Mohammad Abdullah</p>
+        <p>All Rights Reserved&#169</p>
+    </div>
+    <script>
+        window.addEventListener("scroll",function(){
+            var head = document.querySelector("nav");
+            head.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function togglemenu(){
+            const menutoggle = document.querySelector('.menutoggle');
+            menutoggle.classList.toggle('active');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+
+        };
+        
+    </script>
+</body>
+</html>
